@@ -25,6 +25,7 @@ class Artist
     @@ll.find do |artist| 
     if artist.name == name 
       artist 
+    end 
     else
       new_artist = Artist.new(name)
     end
