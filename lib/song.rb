@@ -1,4 +1,4 @@
-lass Song 
+class Song 
 attr_accessor :name, :artist
 
 
@@ -7,10 +7,10 @@ attr_accessor :name, :artist
     end
 
 
-  def self.new_by_filename(filename)	  def self.new_by_filename(filename)
-    song = self.new	    song = self.new
-    song.name = filename.split(" - ")[1]	    song_name = filename.split(" - ")[1]
-    artist_name = filename.split(" - ")[0]	    song.artist_name = filename.split(" - ")[0]
-    song.artist = Artist.find_or_create_by_name(name)	    song.artist = Artist.find_or_create_by_name(name)
-    song	    song
-  end	  end
+  	  def self.new_by_filename(filename)
+      song = self.new
+    song_name = filename.split(" - ")[1]
+    song.artist_name = filename.split(" - ")[0]
+    song.artist = Artist.find_or_create_by_name(name)
+     song
+  end
