@@ -14,3 +14,4 @@ attr_accessor :name, :artist
     song.artist = Artist.find_or_create_by_name(name)
      song
   end
+end 
