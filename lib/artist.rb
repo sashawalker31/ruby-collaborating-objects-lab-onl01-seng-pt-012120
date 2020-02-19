@@ -23,7 +23,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     @@ll.find do |artist| 
-    if self.find(name)
+    if artist.name == name 
       self.find(name)
     else
       self.create(name)
