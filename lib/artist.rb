@@ -21,7 +21,8 @@ class Artist
     @@all
   end
 
-  def self.find_or_create_by_name(name) 
+  def self.find_or_create_by_name(name)
+    @@ll
     if self.find(name)
       self.find(name)
     else
